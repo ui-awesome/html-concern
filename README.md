@@ -11,7 +11,7 @@
         <img src="https://github.com/ui-awesome/html-concern/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
     </a>
     <a href="https://codecov.io/gh/ui-awesome/html-concern" target="_blank">
-        <img src="https://codecov.io/gh/ui-awesome/html-concern/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
+        <img src="https://codecov.io/gh/ui-awesome/html-concern/graph/badge.svg?token=H0E4D7157X" alt="Codecov">
     </a>
     <a href="https://dashboard.stryker-mutator.io/reports/github.com/ui-awesome/html-concern/main" target="_blank">
         <img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fui-awesome%2Fhtml-concern%2Fmain" alt="Infection">
