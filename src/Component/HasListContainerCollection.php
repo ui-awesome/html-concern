@@ -15,6 +15,14 @@ trait HasListContainerCollection
     protected false|string $listContainerTag = false;
 
     /**
+     * @return array The `HTML` attributes for the container for tag `<ul>` or `<ol>`.
+     */
+    public function getListContainerAttributes(): array
+    {
+        return $this->listContainerAttributes;
+    }
+
+    /**
      * Set the `HTML` attributes for the container for tag `<ul>` or `<ol>`.
      *
      * @param array $values Attribute values indexed by attribute names.
