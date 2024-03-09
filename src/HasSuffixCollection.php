@@ -7,7 +7,7 @@ namespace UIAwesome\Html\Concern;
 use UIAwesome\Html\{Helper\CssClass, Helper\Sanitize, Interop\RenderInterface};
 
 /**
- * Is used by widgets that implement the suffix collection.
+ * Is used by widgets that implement the suffix collection class.
  */
 trait HasSuffixCollection
 {

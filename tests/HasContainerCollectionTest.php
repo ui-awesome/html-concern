@@ -8,6 +8,18 @@ use UIAwesome\Html\Concern\HasContainerCollection;
 
 final class HasContainerCollectionTest extends \PHPUnit\Framework\TestCase
 {
+    public function testAttributes(): void
+    {
+        $instance = new class () {
+            use HasContainerCollection;
+        };
+
+        $instance = $instance->containerAttributes(['class' => 'value']);
+        $instance = $instance->containerAttributes(['disabled' => true]);
+
+        $this->assertSame(['class' => 'value', 'disabled' => true], $instance->getContainerAttributes());
+    }
+
     public function testClass(): void
     {
         $instance = new class () {
@@ -34,7 +46,7 @@ final class HasContainerCollectionTest extends \PHPUnit\Framework\TestCase
         $this->assertSame('override-class', $instance->getContainerClass());
     }
 
-    public function testContainerTag(): void
+    public function testTag(): void
     {
         $instance = new class () {
             use HasContainerCollection;
@@ -60,7 +72,7 @@ final class HasContainerCollectionTest extends \PHPUnit\Framework\TestCase
         $this->assertFalse($instance->getContainerTag());
     }
 
-    public function testException(): void
+    public function testTagExceptionWithEmptyValue(): void
     {
         $instance = new class () {
             use HasContainerCollection;

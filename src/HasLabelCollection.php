@@ -6,8 +6,10 @@ namespace UIAwesome\Html\Concern;
 
 use UIAwesome\Html\{Helper\CssClass, Helper\Sanitize, Interop\RenderInterface};
 
+use function array_merge;
+
 /**
- * Is used by widgets that implement the label methods.
+ * Is used by widgets that implement the label collection class.
  */
 trait HasLabelCollection
 {
@@ -28,6 +30,16 @@ trait HasLabelCollection
         $new->disableLabel = true;
 
         return $new;
+    }
+
+    /**
+     * Get the `HTML` attributes for the label.
+     *
+     * @return array Attribute values indexed by attribute names.
+     */
+    public function getLabelAttributes(): array
+    {
+        return $this->labelAttributes;
     }
 
     /**
@@ -55,7 +67,7 @@ trait HasLabelCollection
     public function labelAttributes(array $values): static
     {
         $new = clone $this;
-        $new->labelAttributes = $values;
+        $new->labelAttributes = array_merge($new->labelAttributes, $values);
 
         return $new;
     }
