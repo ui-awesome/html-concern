@@ -6,8 +6,10 @@ namespace UIAwesome\Html\Concern;
 
 use UIAwesome\Html\Helper\CssClass;
 
+use function array_merge;
+
 /**
- * Is used by widgets that implement container methods.
+ * Is used by widgets that implement container collection class.
  */
 trait HasContainerCollection
 {
@@ -24,7 +26,7 @@ trait HasContainerCollection
     public function containerAttributes(array $values = []): static
     {
         $new = clone $this;
-        $new->containerAttributes = $values;
+        $new->containerAttributes = array_merge($new->containerAttributes, $values);
 
         return $new;
     }
@@ -66,5 +68,15 @@ trait HasContainerCollection
         $new->containerTag = $value;
 
         return $new;
+    }
+
+    /**
+     * Get the `HTML` attributes for the container.
+     *
+     * @return array Attribute values indexed by attribute names.
+     */
+    public function getContainerAttributes(): array
+    {
+        return $this->containerAttributes;
     }
 }

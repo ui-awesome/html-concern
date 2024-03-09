@@ -8,6 +8,18 @@ use UIAwesome\Html\Concern\{HasLabelCollection, Tests\Support\InputWidget};
 
 final class HasLabelCollectionTest extends \PHPUnit\Framework\TestCase
 {
+    public function testAttributes(): void
+    {
+        $instance = new class () {
+            use HasLabelCollection;
+        };
+
+        $instance = $instance->labelAttributes(['class' => 'value']);
+        $instance = $instance->labelAttributes(['disabled' => true]);
+
+        $this->assertSame(['class' => 'value', 'disabled' => true], $instance->getLabelAttributes());
+    }
+
     public function testClass(): void
     {
         $instance = new class () {

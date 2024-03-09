@@ -9,7 +9,7 @@ use UIAwesome\Html\Helper\CssClass;
 use function array_merge;
 
 /**
- * Is used by widgets which implement the unchecked method.
+ * Is used by widgets which implement the unchecked collection class.
  */
 trait HasUncheckedCollection
 {
