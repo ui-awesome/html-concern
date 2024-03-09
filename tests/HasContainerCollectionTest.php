@@ -11,7 +11,7 @@ final class HasContainerCollectionTest extends \PHPUnit\Framework\TestCase
     public function testAttributes(): void
     {
         $instance = new class () {
-            use HasContainerCollection  ;
+            use HasContainerCollection;
         };
 
         $instance = $instance->containerAttributes(['class' => 'value']);
