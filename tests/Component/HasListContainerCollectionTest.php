@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Concern\Tests\Component;
 
-use UIAwesome\Html\Concern\Component\HasListCollection;
 use UIAwesome\Html\Concern\Component\HasListContainerCollection;
 
 final class HasListContainerCollectionTest extends \PHPUnit\Framework\TestCase
@@ -12,13 +11,13 @@ final class HasListContainerCollectionTest extends \PHPUnit\Framework\TestCase
     public function testAttributes(): void
     {
         $instance = new class () {
-            use HasListCollection;
+            use HasListContainerCollection;
         };
 
-        $instance = $instance->listAttributes(['class' => 'value']);
-        $instance = $instance->listAttributes(['disabled' => true]);
+        $instance = $instance->listContainerAttributes(['class' => 'value']);
+        $instance = $instance->listContainerAttributes(['disabled' => true]);
 
-        $this->assertSame(['class' => 'value', 'disabled' => true], $instance->getListAttributes());
+        $this->assertSame(['class' => 'value', 'disabled' => true], $instance->getListContainerAttributes());
     }
 
     public function testClass(): void

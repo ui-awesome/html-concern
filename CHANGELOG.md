@@ -3,6 +3,7 @@
 ## 0.1.1 March 9, 2024
 
 - Enh #2: Add traits `components` classes (@terabytesoftw)
+- Bug #3: Fix trait `HasListContainerCollection` class and update `README.md` (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 

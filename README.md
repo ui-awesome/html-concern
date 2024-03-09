@@ -1,3 +1,4 @@
+
 <p align="center">
     <a href="https://github.com/ui-awesome/html-concern" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/121752654?s=200&v=4" height="100px">
@@ -62,6 +63,27 @@ List of traits avaibles to use in your classes:
 - [HasUncheckedCollection](src/HasUncheckedCollection.php)
   > Methods available: `uncheckedAttributes()`, `uncheckedClass()`, `uncheckedValue()`.
 
+List of components avaibles to use in your classes:
+
+- [HasActivateItems](src/Component/HasActivateItems.php)
+- [HasActiveClass](src/Component/HasActiveClass.php)
+- [HasCurrentPath](src/Component/HasCurrentPath.php)
+- [HasDisabledClass](src/Component/HasDisabledClass.php)
+- [HasIconCollection](src/Component/HasIconCollection.php)
+  > Methods available: `getIconAttributes()`, `iconAttributes()`, `iconClass()`, `iconContent()`, `iconFilePath()`, `iconTag()`.
+- [HasLinkCollection](src/Component/HasLinkCollection.php)
+  > Methods available: `getLinkAttributes()`, `linkAttributes()`, `linkClass()`.
+- [HasListCollection](src/Component/HasListCollection.php)
+  > Methods available: `getListAttributes()`, `listAttributes()`, `listClass()`, `listType()`.
+- [HasListContainerCollection](src/Component/HasListContainerCollection.php)
+  > Methods available: `getListContainerAttributes()`, `listContainerAttributes()`, `listContainerClass()`, `listContainerTag()`.
+- [HasListItemCollection](src/Component/HasListItemCollection.php)
+  > Methods available: `getListItemAttributes()`, `listItemAttributes()`, `listItemClass()`, `listItemTag()`.
+- [HasListItemContainerCollection](src/Component/HasListItemContainerCollection.php)
+  > Methods available: `getListItemContainerAttributes()`, `listItemContainerAttributes()`, `listItemContainerClass()`, `listItemContainerTag()`.
+- [HasPrefixItems](src/Component/HasPrefixItems.php)
+- [HasSuffixItems](src/Component/HasSuffixItems.php)
+- [HasToggle](src/Component/HasToggle.php)
 
 ## Testing
 

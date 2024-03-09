@@ -6,6 +6,8 @@ namespace UIAwesome\Html\Concern\Component;
 
 use UIAwesome\Html\Helper\CssClass;
 
+use function array_merge;
+
 /**
  * Is used by widgets that implement list collection class.
  */
@@ -13,6 +15,14 @@ trait HasListContainerCollection
 {
     protected array $listContainerAttributes = [];
     protected false|string $listContainerTag = false;
+
+    /**
+     * @return array The `HTML` attributes for the container for tag `<ul>` or `<ol>`.
+     */
+    public function getListContainerAttributes(): array
+    {
+        return $this->listContainerAttributes;
+    }
 
     /**
      * Set the `HTML` attributes for the container for tag `<ul>` or `<ol>`.
@@ -24,7 +34,7 @@ trait HasListContainerCollection
     public function listContainerAttributes(array $values): static
     {
         $new = clone $this;
-        $new->listContainerAttributes = $values;
+        $new->listContainerAttributes = array_merge($new->listContainerAttributes, $values);
 
         return $new;
     }
