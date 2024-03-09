@@ -55,5 +55,33 @@ final class HasIconCollectionTest extends \PHPUnit\Framework\TestCase
         $this->assertNotSame($instance, $instance->iconAttributes([]));
         $this->assertNotSame($instance, $instance->iconClass(''));
         $this->assertNotSame($instance, $instance->iconContent(''));
+        $this->assertNotSame($instance, $instance->iconFilePath(''));
+        $this->assertNotSame($instance, $instance->iconTag(false));
+    }
+
+    public function testTagExceptionWithEmptyValue(): void
+    {
+        $instance = new class () {
+            use HasIconCollection;
+        };
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('The value must not be empty. The valid values are: "i", "span", "svg".');
+
+        $instance->iconTag('');
+    }
+
+    public function testTagExceptionWithInvalidValue(): void
+    {
+        $instance = new class () {
+            use HasIconCollection;
+        };
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage(
+            'Invalid value "value" for the icon tag method. Allowed values are: "i", "span", "svg".'
+        );
+
+        $instance->iconTag('value');
     }
 }
