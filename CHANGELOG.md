@@ -10,6 +10,7 @@
 - Enh #5: Add trait `HasFirstLinkClass` class (@terabytesoftw)
 - Enh #6: Add trait `HasLastItemClass` class (@terabytesoftw)
 - Enh #7: Add trait `HasLastLinkClass` class (@terabytesoftw)
+- Bug #8: Add for overriding classes in `HasLastItemClass`, `HasLastLinkClass`, `HasFirstItemClass` and `HasFirstLinkClass` (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 

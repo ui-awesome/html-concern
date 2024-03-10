@@ -16,4 +16,28 @@ final class HasFirstLinkClassTest extends \PHPUnit\Framework\TestCase
 
         $this->assertNotSame($instance, $instance->firstLinkClass(''));
     }
+
+    public function testOverrideActiveClass(): void
+    {
+        $instance = new class () {
+            use HasFirstLinkClass;
+
+            public array $linkAttributes = [];
+
+            public function getOverrideFirstLinkClass(): bool
+            {
+                return $this->overrideFirstLinkClass;
+            }
+        };
+
+        $this->assertTrue($instance->getOverrideFirstLinkClass());
+
+        $instance = $instance->firstLinkClass($instance->linkAttributes);
+
+        $this->assertTrue($instance->getOverrideFirstLinkClass());
+
+        $instance = $instance->firstLinkClass($instance->linkAttributes, false);
+
+        $this->assertFalse($instance->getOverrideFirstLinkClass());
+    }
 }

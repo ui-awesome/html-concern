@@ -16,4 +16,28 @@ final class HasLastItemClassTest extends \PHPUnit\Framework\TestCase
 
         $this->assertNotSame($instance, $instance->lastItemClass(''));
     }
+
+    public function testOverrideActiveClass(): void
+    {
+        $instance = new class () {
+            use HasLastItemClass;
+
+            public array $linkAttributes = [];
+
+            public function getOverrideLastItemClass(): bool
+            {
+                return $this->overrideLastItemClass;
+            }
+        };
+
+        $this->assertTrue($instance->getOverrideLastItemClass());
+
+        $instance = $instance->lastItemClass($instance->linkAttributes);
+
+        $this->assertTrue($instance->getOverrideLastItemClass());
+
+        $instance = $instance->lastItemClass($instance->linkAttributes, false);
+
+        $this->assertFalse($instance->getOverrideLastItemClass());
+    }
 }

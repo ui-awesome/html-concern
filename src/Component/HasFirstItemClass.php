@@ -9,19 +9,22 @@ namespace UIAwesome\Html\Concern\Component;
  */
 trait HasFirstItemClass
 {
-    protected string $firstItemClass = '';
+    protected array|string $firstItemClass = '';
+    protected bool $overrideFirstItemClass = true;
 
     /**
      * Set the first item class.
      *
-     * @param string $value The `CSS` class that will be assigned to the first item.
+     * @param array|string $value The `CSS` class that will be assigned to the first item.
+     * @param bool $override Whether to override the current first item class or not.
      *
      * @return static A new instance of the current class with the specified first item class.
      */
-    public function firstItemClass(string $value): static
+    public function firstItemClass(array|string $value, bool $override = true): static
     {
         $new = clone $this;
         $new->firstItemClass = $value;
+        $new->overrideFirstItemClass = $override;
 
         return $new;
     }
