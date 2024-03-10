@@ -69,6 +69,7 @@ List of components avaibles to use in your classes:
 - [HasActiveClass](src/Component/HasActiveClass.php)
 - [HasCurrentPath](src/Component/HasCurrentPath.php)
 - [HasDisabledClass](src/Component/HasDisabledClass.php)
+- [HasFirstItemClass](src/Component/HasFirstItemClass.php)
 - [HasIconCollection](src/Component/HasIconCollection.php)
   > Methods available: `getIconAttributes()`, `iconAttributes()`, `iconClass()`, `iconContent()`, `iconFilePath()`, `iconTag()`.
 - [HasLinkCollection](src/Component/HasLinkCollection.php)
