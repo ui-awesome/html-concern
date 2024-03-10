@@ -35,7 +35,7 @@ final class HasLinkActiveClassTest extends \PHPUnit\Framework\TestCase
 
         $this->assertTrue($instance->getOverrideLinkActiveClass());
 
-        $instance = $instance->linkActiveClass($instance->linkAttributes, true);
+        $instance = $instance->linkActiveClass($instance->linkAttributes);
 
         $this->assertTrue($instance->getOverrideLinkActiveClass());
 
