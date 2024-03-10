@@ -13,7 +13,7 @@ trait HasLastItemClass
     protected bool $overrideLastItemClass = true;
 
     /**
-     * Sets the last item class.
+     * Sets the `CSS` class that will be assigned to the last item.
      *
      * @param array|string $value The `CSS` class that will be assigned to the last item.
      * @param bool $override Whether to override the current last item class or not.

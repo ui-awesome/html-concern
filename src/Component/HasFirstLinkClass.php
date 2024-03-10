@@ -13,7 +13,7 @@ trait HasFirstLinkClass
     protected bool $overrideFirstLinkClass = true;
 
     /**
-     * Set the first link class.
+     * Set the `CSS` class that will be assigned to the first link.
      *
      * @param array|string $value The `CSS` class that will be assigned to the first link.
      * @param bool $override Whether to override the current first link class or not.

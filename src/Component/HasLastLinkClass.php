@@ -13,7 +13,7 @@ trait HasLastLinkClass
     protected bool $overrideLastLinkClass = true;
 
     /**
-     * Sets the last link class.
+     * Sets the `CSS` class that will be assigned to the active link.
      *
      * @param array|string $value The `CSS` class that will be assigned to the last link.
      * @param bool $override Whether to override the current last link class or not.
