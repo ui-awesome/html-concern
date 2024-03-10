@@ -75,6 +75,8 @@ List of components avaibles to use in your classes:
 - [HasLastLinkClass](src/Component/HasLastLinkClass.php)
 - [HasLinkCollection](src/Component/HasLinkCollection.php)
   > Methods available: `getLinkAttributes()`, `linkAttributes()`, `linkClass()`.
+- [HasLinkContainerCollection](src/Component/HasLinkContainerCollection.php)
+  > Methods available: `getLinkContainerAttributes()`, `linkContainerAttributes()`, `linkContainerClass()`, `linkContainerTag()`.
 - [HasListCollection](src/Component/HasListCollection.php)
   > Methods available: `getListAttributes()`, `listAttributes()`, `listClass()`, `listType()`.
 - [HasListContainerCollection](src/Component/HasListContainerCollection.php)
