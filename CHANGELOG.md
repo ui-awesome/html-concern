@@ -13,6 +13,7 @@
 - Bug #8: Add for overriding classes in `HasLastItemClass`, `HasLastLinkClass`, `HasFirstItemClass` and `HasFirstLinkClass` (@terabytesoftw)
 - Bug #9: Update phpdoc `CSS` class assignments (@terabytesoftw)
 - Bug #10: Better naming `HasLinkActiveClass` and `HasLinkDisableClass` (@terabytesoftw)
+- Enh #11: Add trait `HasLinkItemActiveClass` class (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 
