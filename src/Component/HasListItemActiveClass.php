@@ -13,7 +13,7 @@ trait HasListItemActiveClass
      * @psalm-var string|string[]
      */
     protected array|string $listItemActiveClass = '';
-    protected bool $overrideListItemActiveClass = true;
+    protected bool $overrideListItemActiveClass = false;
 
     /**
      * Set the `CSS` class to be appended to the list item active class.
@@ -25,7 +25,7 @@ trait HasListItemActiveClass
      *
      * @psalm-param string|string[] $value
      */
-    public function listItemActiveClass(array|string $value, bool $override = true): static
+    public function listItemActiveClass(array|string $value, bool $override = false): static
     {
         $new = clone $this;
         $new->listItemActiveClass = $value;
