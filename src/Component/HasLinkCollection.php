@@ -14,6 +14,7 @@ use function array_merge;
 trait HasLinkCollection
 {
     protected array $linkAttributes = [];
+    protected false|string $linkTag = '';
 
     /**
      * @return array The `HTML` attributes of the href of the menu item.
@@ -50,6 +51,29 @@ trait HasLinkCollection
     {
         $new = clone $this;
         CssClass::add($new->linkAttributes, $value, $override);
+
+        return $new;
+    }
+
+    /**
+     * Set the link tag name.
+     *
+     * @param false|string $value The tag name for the link element.
+     * If `false` the link tag will be disabled.
+     *
+     * @throws \InvalidArgumentException If the link tag is an empty string.
+     *
+     * @return static A new instance of the current class with the specified link tag.
+     * If `false` the link tag will be disabled.
+     */
+    public function linkTag(false|string $value = 'a'): static
+    {
+        if ($value === '') {
+            throw new \InvalidArgumentException('The link tag must be a non-empty string.');
+        }
+
+        $new = clone $this;
+        $new->linkTag = $value;
 
         return $new;
     }

@@ -46,6 +46,18 @@ final class HasLinkCollectionTest extends \PHPUnit\Framework\TestCase
         $this->assertSame('override-class', $instance->getLinkClass());
     }
 
+    public function testTagExceptionWithEmptyValue(): void
+    {
+        $instance = new class () {
+            use HasLinkCollection;
+        };
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('The link tag must be a non-empty string.');
+
+        $instance->linkTag('');
+    }
+
     public function testImmutability(): void
     {
         $instance = new class () {
@@ -54,5 +66,6 @@ final class HasLinkCollectionTest extends \PHPUnit\Framework\TestCase
 
         $this->assertNotSame($instance, $instance->linkAttributes([]));
         $this->assertNotSame($instance, $instance->linkClass(''));
+        $this->assertNotSame($instance, $instance->linkTag());
     }
 }
