@@ -33,14 +33,14 @@ final class HasLinkDisableClassTest extends \PHPUnit\Framework\TestCase
             }
         };
 
-        $this->assertTrue($instance->getOverrideLinkDisableClass());
+        $this->assertFalse($instance->getOverrideLinkDisableClass());
 
         $instance = $instance->linkDisableClass($instance->linkAttributes);
 
-        $this->assertTrue($instance->getOverrideLinkDisableClass());
-
-        $instance = $instance->linkDisableClass($instance->linkAttributes, false);
-
         $this->assertFalse($instance->getOverrideLinkDisableClass());
+
+        $instance = $instance->linkDisableClass($instance->linkAttributes, true);
+
+        $this->assertTrue($instance->getOverrideLinkDisableClass());
     }
 }

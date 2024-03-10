@@ -13,7 +13,7 @@ trait HasLinkDisableClass
      * @psalm-var string|string[]
      */
     protected array|string $linkDisableClass = '';
-    protected bool $overrideLinkDisableClass = true;
+    protected bool $overrideLinkDisableClass = false;
 
     /**
      * Sets the `CSS` class that will be assigned to the link when it is disabled.
@@ -25,7 +25,7 @@ trait HasLinkDisableClass
      *
      * @psalm-param string|string[] $value
      */
-    public function linkDisableClass(array|string $value, bool $override = true): static
+    public function linkDisableClass(array|string $value, bool $override = false): static
     {
         $new = clone $this;
         $new->linkDisableClass = $value;

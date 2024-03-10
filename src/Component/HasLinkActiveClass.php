@@ -13,7 +13,7 @@ trait HasLinkActiveClass
      * @psalm-var string|string[]
      */
     protected array|string $linkActiveClass = '';
-    protected bool $overrideLinkActiveClass = true;
+    protected bool $overrideLinkActiveClass = false;
 
     /**
      * Set the `CSS` class to be appended to the link active class.
@@ -25,7 +25,7 @@ trait HasLinkActiveClass
      *
      * @psalm-param string|string[] $value
      */
-    public function linkActiveClass(array|string $value, bool $override = true): static
+    public function linkActiveClass(array|string $value, bool $override = false): static
     {
         $new = clone $this;
         $new->linkActiveClass = $value;

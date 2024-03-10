@@ -16,6 +16,7 @@
 - Enh #11: Add trait `HasLinkItemActiveClass` class (@terabytesoftw)
 - Bug #12: Update value default `override` `true` to `false` in `HasLinkItemActiveClass` (@terabytesoftw)
 - Enh #13: Add trait `HasLinkItemDisableClass` class (@terabytesoftw)
+- Bug #14: Update value default `override` `true` to `false` in `HasLinkActiveClass` and `HasLinkDisableClass` (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 
