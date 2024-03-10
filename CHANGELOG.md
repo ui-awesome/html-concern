@@ -14,6 +14,7 @@
 - Bug #9: Update phpdoc `CSS` class assignments (@terabytesoftw)
 - Bug #10: Better naming `HasLinkActiveClass` and `HasLinkDisableClass` (@terabytesoftw)
 - Enh #11: Add trait `HasLinkItemActiveClass` class (@terabytesoftw)
+- Bug #12: Update value default `override` `true` to `false` in `HasLinkItemActiveClass` (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 

@@ -17,7 +17,7 @@ final class HasListItemActiveClassTest extends \PHPUnit\Framework\TestCase
         };
 
         $this->assertNotSame($instance, $instance->listItemActiveClass($instance->listItemAttributes));
-        $this->assertNotSame($instance, $instance->listItemActiveClass($instance->listItemAttributes, false));
+        $this->assertNotSame($instance, $instance->listItemActiveClass($instance->listItemAttributes, true));
     }
 
     public function testOverrideActiveClass(): void
@@ -33,13 +33,13 @@ final class HasListItemActiveClassTest extends \PHPUnit\Framework\TestCase
             }
         };
 
+        $this->assertFalse($instance->getOverrideListItemActiveClass());
+
+        $instance = $instance->listItemActiveClass($instance->listItemAttributes, true);
+
         $this->assertTrue($instance->getOverrideListItemActiveClass());
 
         $instance = $instance->listItemActiveClass($instance->listItemAttributes);
-
-        $this->assertTrue($instance->getOverrideListItemActiveClass());
-
-        $instance = $instance->listItemActiveClass($instance->listItemAttributes, false);
 
         $this->assertFalse($instance->getOverrideListItemActiveClass());
     }
