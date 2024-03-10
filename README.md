@@ -90,6 +90,7 @@ List of components avaibles to use in your classes:
   > Methods available: `getListItemContainerAttributes()`, `listItemContainerAttributes()`, `listItemContainerClass()`, `listItemContainerTag()`.
 - [HasPrefixItems](src/Component/HasPrefixItems.php)
 - [HasSuffixItems](src/Component/HasSuffixItems.php)
+- [HasTemplateItems](src/Component/HasTemplateItems.php)
 - [HasToggle](src/Component/HasToggle.php)
 
 ## Testing
