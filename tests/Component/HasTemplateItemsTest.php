@@ -6,7 +6,7 @@ namespace UIAwesome\Html\Concern\Tests\Component;
 
 use UIAwesome\Html\Concern\Component\HasTemplateItems;
 
-final class HasActivateItemsTest extends \PHPUnit\Framework\TestCase
+final class HasTemplateItemsTest extends \PHPUnit\Framework\TestCase
 {
     public function testImmutability(): void
     {
