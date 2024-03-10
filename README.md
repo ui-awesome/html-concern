@@ -66,9 +66,7 @@ List of traits avaibles to use in your classes:
 List of components avaibles to use in your classes:
 
 - [HasActivateItems](src/Component/HasActivateItems.php)
-- [HasActiveClass](src/Component/HasActiveClass.php)
 - [HasCurrentPath](src/Component/HasCurrentPath.php)
-- [HasDisabledClass](src/Component/HasDisabledClass.php)
 - [HasFirstItemClass](src/Component/HasFirstItemClass.php)
 - [HasFirstLinkClass](src/Component/HasFirstLinkClass.php)
 - [HasIconCollection](src/Component/HasIconCollection.php)
@@ -81,6 +79,8 @@ List of components avaibles to use in your classes:
   > Methods available: `getListAttributes()`, `listAttributes()`, `listClass()`, `listType()`.
 - [HasListContainerCollection](src/Component/HasListContainerCollection.php)
   > Methods available: `getListContainerAttributes()`, `listContainerAttributes()`, `listContainerClass()`, `listContainerTag()`.
+- [HasLinkActiveClass](src/Component/HasActiveClass.php)  
+- [HasLinkDisabledClass](src/Component/HasDisabledClass.php)  
 - [HasListItemCollection](src/Component/HasListItemCollection.php)
   > Methods available: `getListItemAttributes()`, `listItemAttributes()`, `listItemClass()`, `listItemTag()`.
 - [HasListItemContainerCollection](src/Component/HasListItemContainerCollection.php)
