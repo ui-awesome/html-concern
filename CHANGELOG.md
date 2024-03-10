@@ -18,6 +18,7 @@
 - Enh #13: Add trait `HasLinkItemDisableClass` class (@terabytesoftw)
 - Bug #14: Update value default `override` `true` to `false` in `HasLinkActiveClass` and `HasLinkDisableClass` (@terabytesoftw)
 - Enh #15: Add trait `HasTemplateItems` class (@terabytesoftw)
+- Enh #16: Add trait `HasTemplateLinkItem` class (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 

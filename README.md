@@ -91,6 +91,7 @@ List of components avaibles to use in your classes:
 - [HasPrefixItems](src/Component/HasPrefixItems.php)
 - [HasSuffixItems](src/Component/HasSuffixItems.php)
 - [HasTemplateItems](src/Component/HasTemplateItems.php)
+- [HasTemplateLinkItem](src/Component/HasTemplateLinkItem.php)
 - [HasToggle](src/Component/HasToggle.php)
 
 ## Testing
