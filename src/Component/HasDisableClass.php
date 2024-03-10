@@ -16,7 +16,7 @@ trait HasDisableClass
     protected bool $overrideDisableClass = false;
 
     /**
-     * Set the `CSS` class to be appended to the disable class.
+     * Sets the `CSS` class that will be assigned to the disable class.
      *
      * @param array|string $value The `CSS` class to be appended to the disable class.
      * @param bool $override Whether to override the current disable class or not.

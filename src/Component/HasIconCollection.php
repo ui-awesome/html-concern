@@ -46,7 +46,7 @@ trait HasIconCollection
     }
 
     /**
-     * Set the `CSS` class for the icon.
+     * Sets the `CSS` class that will be assigned to the icon.
      *
      * @param string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.

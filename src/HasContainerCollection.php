@@ -32,7 +32,7 @@ trait HasContainerCollection
     }
 
     /**
-     * Set the `CSS` class for the container.
+     * Sets the `CSS` class that will be assigned to the container.
      *
      * @param string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.

@@ -40,7 +40,7 @@ trait HasListContainerCollection
     }
 
     /**
-     * Set the `CSS` class for the container for tag `<ul>` or `<ol>`.
+     * Sets the `CSS` class that will be assigned to the container for tag `<ul>` or `<ol>`.
      *
      * @param string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.

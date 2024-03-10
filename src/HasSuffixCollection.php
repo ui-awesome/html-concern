@@ -46,7 +46,7 @@ trait HasSuffixCollection
     }
 
     /**
-     * Set the `CSS` class for the suffix tag.
+     * Sets the `CSS` class that will be assigned to the suffix.
      *
      * @param string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.

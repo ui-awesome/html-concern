@@ -13,7 +13,7 @@ trait HasFirstItemClass
     protected bool $overrideFirstItemClass = true;
 
     /**
-     * Set the first item class.
+     * Sets the `CSS` class that will be assigned to the first item.
      *
      * @param array|string $value The `CSS` class that will be assigned to the first item.
      * @param bool $override Whether to override the current first item class or not.

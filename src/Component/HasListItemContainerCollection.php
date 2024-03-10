@@ -42,7 +42,7 @@ trait HasListItemContainerCollection
     }
 
     /**
-     * Set the `CSS` class for the container for list items.
+     * Sets the `CSS` class that will be assigned to the container for list items.
      *
      * @param string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.

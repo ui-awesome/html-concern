@@ -42,7 +42,7 @@ trait HasListItemCollection
     }
 
     /**
-     * Set the `CSS` class for tag `<li>`.
+     * Sets the `CSS` class that will be assigned to the list item.
      *
      * @param string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.

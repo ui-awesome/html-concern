@@ -40,7 +40,7 @@ trait HasListCollection
     }
 
     /**
-     * Set the `CSS` class for the `<ul>` or `<ol>` tag.
+     * Sets the `CSS` class that will be assigned to the `<ul>` or `<ol>` tag.
      *
      * @param string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.

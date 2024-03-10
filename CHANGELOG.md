@@ -11,6 +11,7 @@
 - Enh #6: Add trait `HasLastItemClass` class (@terabytesoftw)
 - Enh #7: Add trait `HasLastLinkClass` class (@terabytesoftw)
 - Bug #8: Add for overriding classes in `HasLastItemClass`, `HasLastLinkClass`, `HasFirstItemClass` and `HasFirstLinkClass` (@terabytesoftw)
+- Bug #9: Update phpdoc `CSS` class assignments (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 

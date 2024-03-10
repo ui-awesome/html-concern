@@ -73,7 +73,7 @@ trait HasLabelCollection
     }
 
     /**
-     * Set the `CSS` class for the label.
+     * Sets the `CSS` class that will be assigned to the label.
      *
      * @param string $value The value of the class attribute.
      * @param bool $override If `true` the value will be overridden.

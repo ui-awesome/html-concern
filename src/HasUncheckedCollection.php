@@ -32,7 +32,7 @@ trait HasUncheckedCollection
     }
 
     /**
-     * Set the `CSS` class for the unchecked element.
+     * Sets the `CSS` class that will be assigned to the unchecked elements.
      *
      * @param string $class The CSS class name.
      * @param bool $override If `true` the value will be overridden.

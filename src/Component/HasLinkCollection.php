@@ -39,7 +39,7 @@ trait HasLinkCollection
     }
 
     /**
-     * Set the `CSS` class for the link tag.
+     * Sets the `CSS` class that will be assigned to the link.
      *
      * @param string $value The `CSS` class for the link tag.
      * @param bool $override If `true` the value will be overridden.
