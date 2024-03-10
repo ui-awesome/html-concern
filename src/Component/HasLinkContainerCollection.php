@@ -33,7 +33,7 @@ trait HasLinkContainerCollection
      *
      * @return static A new instance of the current class with the specified link container attributes.
      */
-    public function linkContainerAttributes(array $value): static
+    public function linkContainerAttributes(array $values): static
     {
         $new = clone $this;
         $new->linkContainerAttributes = array_merge($this->linkContainerAttributes, $value);
