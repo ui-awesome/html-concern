@@ -79,6 +79,7 @@ List of components avaibles to use in your classes:
   > Methods available: `getListAttributes()`, `listAttributes()`, `listClass()`, `listType()`.
 - [HasListContainerCollection](src/Component/HasListContainerCollection.php)
   > Methods available: `getListContainerAttributes()`, `listContainerAttributes()`, `listContainerClass()`, `listContainerTag()`.
+- [HasLastItemActiveClass](src/Component/HasLastItemActiveClass.php)
 - [HasLinkActiveClass](src/Component/HasActiveClass.php)  
 - [HasLinkDisabledClass](src/Component/HasDisabledClass.php)  
 - [HasListItemCollection](src/Component/HasListItemCollection.php)

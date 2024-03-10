@@ -22,7 +22,7 @@ final class HasLastLinkClassTest extends \PHPUnit\Framework\TestCase
         $instance = new class () {
             use HasLastLinkClass;
 
-            public array $linkAttributes = [];
+            public array $lastLinkAttributes = [];
 
             public function getOverrideLastLinkClass(): bool
             {
@@ -32,11 +32,11 @@ final class HasLastLinkClassTest extends \PHPUnit\Framework\TestCase
 
         $this->assertTrue($instance->getOverrideLastLinkClass());
 
-        $instance = $instance->lastLinkClass($instance->linkAttributes);
+        $instance = $instance->lastLinkClass($instance->lastLinkAttributes);
 
         $this->assertTrue($instance->getOverrideLastLinkClass());
 
-        $instance = $instance->lastLinkClass($instance->linkAttributes, false);
+        $instance = $instance->lastLinkClass($instance->lastLinkAttributes, false);
 
         $this->assertFalse($instance->getOverrideLastLinkClass());
     }
