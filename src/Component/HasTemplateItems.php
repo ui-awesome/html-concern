@@ -9,7 +9,7 @@ namespace UIAwesome\Html\Concern\Component;
  */
 trait HasTemplateItems
 {
-    protected array $templateItems = [];
+    protected string $templateItems = '';
 
     /**
      * Set the template for the menu items.
