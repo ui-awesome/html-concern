@@ -36,7 +36,7 @@ trait HasLinkContainerCollection
     public function linkContainerAttributes(array $values): static
     {
         $new = clone $this;
-        $new->linkContainerAttributes = array_merge($this->linkContainerAttributes, $value);
+        $new->linkContainerAttributes = array_merge($this->linkContainerAttributes, $values);
 
         return $new;
     }
