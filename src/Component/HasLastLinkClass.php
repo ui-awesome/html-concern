@@ -9,19 +9,22 @@ namespace UIAwesome\Html\Concern\Component;
  */
 trait HasLastLinkClass
 {
-    protected string $lastLinkClass = '';
+    protected array|string $lastLinkClass = '';
+    protected bool $overrideLastLinkClass = true;
 
     /**
      * Sets the last link class.
      *
-     * @param string $value The `CSS` class that will be assigned to the last link.
+     * @param array|string $value The `CSS` class that will be assigned to the last link.
+     * @param bool $override Whether to override the current last link class or not.
      *
      * @return static A new instance of the current class with the specified last link class.
      */
-    public function lastLinkClass(string $value): static
+    public function lastLinkClass(array|string $value, bool $override = true): static
     {
         $new = clone $this;
         $new->lastLinkClass = $value;
+        $new->overrideLastLinkClass = $override;
 
         return $new;
     }
