@@ -26,6 +26,7 @@
 - Enh #21: Add trait `HasTag` class (@terabytesoftw)
 - Enh #22: Add trait `HasLinkAreaCurrent` class (@terabytesoftw)
 - Enh #23: Add trait `HasListItemAreaCurrent` class (@terabytesoftw)
+- Bug #24: Fix `linkAriaCurrent()` and `listItemAriaCurrent()` methods to accept a boolean value. (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 
