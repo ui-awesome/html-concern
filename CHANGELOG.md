@@ -25,6 +25,7 @@
 - Enh #20: Add trait `HasLinkActiveTag` class (@terabytesoftw)
 - Enh #21: Add trait `HasTag` class (@terabytesoftw)
 - Enh #22: Add trait `HasLinkAreaCurrent` class (@terabytesoftw)
+- Enh #23: Add trait `HasListItemAreaCurrent` class (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 
