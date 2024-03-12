@@ -22,7 +22,7 @@ trait HasListItemAreaCurrent
     public function listItemAriaCurrent(bool $value): static
     {
         $new = clone $this;
-        $new->listItemAriaCurrent = true;
+        $new->listItemAriaCurrent = $value;
 
         return $new;
     }
