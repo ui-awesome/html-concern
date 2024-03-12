@@ -58,6 +58,7 @@ List of traits avaibles to use in your classes:
 - [HasSeparator](src/HasSeparator.php)
 - [HasSuffixCollection](src/HasSuffixCollection.php)
   > Methods available: `suffix()`, `suffixAttributes()`, `suffixClass()`, `suffixTag()`.
+- [HasTag](src/HasTag.php)
 - [HasTagName](src/HasTagName.php)
 - [HasTemplate](src/HasTemplate.php)
 - [HasUncheckedCollection](src/HasUncheckedCollection.php)
