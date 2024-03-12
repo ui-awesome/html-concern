@@ -89,6 +89,7 @@ List of components avaibles to use in your classes:
 - [HasLinkDisabledClass](src/Component/HasDisabledClass.php) 
 - [HasLinkItemActiveClass](src/Component/HasItemActiveClass.php)
 - [HasLinkItemDisabledClass](src/Component/HasItemDisabledClass.php) 
+- [HasListItemAreaCurrent](src/Component/HasListItemAreaCurrent.php)
 - [HasListItemCollection](src/Component/HasListItemCollection.php)
   > Methods available: `getListItemAttributes()`, `listItemAttributes()`, `listItemClass()`, `listItemTag()`.
 - [HasListItemContainerCollection](src/Component/HasListItemContainerCollection.php)
