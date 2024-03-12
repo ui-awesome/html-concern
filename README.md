@@ -85,6 +85,7 @@ List of components avaibles to use in your classes:
 - [HasLastItemActiveClass](src/Component/HasLastItemActiveClass.php)
 - [HasLinkActiveClass](src/Component/HasActiveClass.php)  
 - [HaslinkActiveTag](src/Component/HasLinkActiveTag.php)
+- [HasLinkAreaCurrent](src/Component/HasLinkAreaCurrent.php)
 - [HasLinkDisabledClass](src/Component/HasDisabledClass.php) 
 - [HasLinkItemActiveClass](src/Component/HasItemActiveClass.php)
 - [HasLinkItemDisabledClass](src/Component/HasItemDisabledClass.php) 
