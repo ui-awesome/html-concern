@@ -23,6 +23,7 @@
 - Bug #18: Add `linkTag()` method in `HasLinkCollection` trait (@terabytesoftw)
 - Enh #19: Add trait `HasLinkContainerCollection` class (@terabytesoftw)
 - Enh #20: Add trait `HasLinkActiveTag` class (@terabytesoftw)
+- Enh #21: Add trait `HasTag` class (@terabytesoftw)
 
 ## 0.1.0 March 5, 2024
 
