@@ -13,8 +13,13 @@ trait HasListItemAreaCurrent
 
     /**
      * Set the list item aria current attribute.
+     *
+     * @param bool $value Whether the list item aria current attribute is `true` or `false`.
+     * If `true` the add aria-current attribute to the list item <li> element.
+     *
+     * @return static A new instance of the current class with the specified list item aria current attribute.
      */
-    public function listItemAriaCurrent(): static
+    public function listItemAriaCurrent(bool $value): static
     {
         $new = clone $this;
         $new->listItemAriaCurrent = true;

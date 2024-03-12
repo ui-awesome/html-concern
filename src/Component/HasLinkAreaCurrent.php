@@ -13,11 +13,16 @@ trait HasLinkAreaCurrent
 
     /**
      * Set the link aria current attribute.
+     *
+     * @param bool $value Whether the link aria current attribute is `true` or `false`.
+     * If `true` the add aria-current attribute to the link.
+     *
+     * @return static A new instance of the current class with the specified link aria current attribute.
      */
-    public function linkAriaCurrent(): static
+    public function linkAriaCurrent(bool $value): static
     {
         $new = clone $this;
-        $new->linkAriaCurrent = true;
+        $new->linkAriaCurrent = $value;
 
         return $new;
     }

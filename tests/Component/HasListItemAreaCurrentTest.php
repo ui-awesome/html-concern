@@ -14,7 +14,7 @@ final class HasListItemAreaCurrentTest extends \PHPUnit\Framework\TestCase
             use HasListItemAreaCurrent;
         };
 
-        $this->assertNotSame($instance, $instance->listItemAriaCurrent());
+        $this->assertNotSame($instance, $instance->listItemAriaCurrent(false));
     }
 
     public function testIsLinkAriaCurrent(): void
@@ -24,6 +24,6 @@ final class HasListItemAreaCurrentTest extends \PHPUnit\Framework\TestCase
         };
 
         $this->assertFalse($instance->isListItemAriaCurrent());
-        $this->assertTrue($instance->listItemAriaCurrent()->isListItemAriaCurrent());
+        $this->assertTrue($instance->listItemAriaCurrent(true)->isListItemAriaCurrent());
     }
 }
