@@ -44,10 +44,12 @@ trait HasListItemCollection
     /**
      * Sets the `CSS` class that will be assigned to the list item.
      *
-     * @param string $value The CSS class name.
+     * @param array|string $value The CSS class name.
      * @param bool $override If `true` the value will be overridden.
      *
      * @return static A new instance of the current class with the specified class for tag `<li>`.
+     *
+     * @psalm-param string|string[] $value The `CSS` class for the first link tag.
      */
     public function listItemClass(array|string $value, bool $override = false): static
     {

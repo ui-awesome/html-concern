@@ -42,12 +42,14 @@ trait HasLinkCollection
     /**
      * Sets the `CSS` class that will be assigned to the link.
      *
-     * @param string $value The `CSS` class for the link tag.
+     * @param array|string $value The `CSS` class for the link tag.
      * @param bool $override If `true` the value will be overridden.
      *
      * @return static A new instance of the current class with the specified link class.
+     *
+     * @psalm-param string|string[] $value The `CSS` class for the first link tag.
      */
-    public function linkClass(string $value, bool $override = false): static
+    public function linkClass(array|string $value, bool $override = false): static
     {
         $new = clone $this;
         CssClass::add($new->linkAttributes, $value, $override);
