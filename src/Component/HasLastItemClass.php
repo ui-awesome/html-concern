@@ -9,6 +9,9 @@ namespace UIAwesome\Html\Concern\Component;
  */
 trait HasLastItemClass
 {
+    /**
+     * @psalm-var string|string[]
+     */
     protected array|string $lastItemClass = '';
     protected bool $overrideLastItemClass = true;
 
@@ -19,6 +22,8 @@ trait HasLastItemClass
      * @param bool $override Whether to override the current last item class or not.
      *
      * @return static A new instance of the current class with the specified last item class.
+     *
+     * @psalm-param string|string[] $value The `CSS` class for the last item tag.
      */
     public function lastItemClass(array|string $value, bool $override = true): static
     {

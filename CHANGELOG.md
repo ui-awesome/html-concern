@@ -23,6 +23,7 @@
 - Enh #22: Add trait `HasLinkAreaCurrent` class (@terabytesoftw)
 - Enh #23: Add trait `HasListItemAreaCurrent` class (@terabytesoftw)
 - Bug #24: Fix `linkAriaCurrent()` and `listItemAriaCurrent()` methods to accept a boolean value. (@terabytesoftw)
+- Bug #25: Fix `phpdoc` for `psalm` (@terabytesoftw)
 
 ## 0.1.1 March 9, 2024
 

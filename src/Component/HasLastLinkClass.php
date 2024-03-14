@@ -9,6 +9,9 @@ namespace UIAwesome\Html\Concern\Component;
  */
 trait HasLastLinkClass
 {
+    /**
+     * @psalm-var string|string[]
+     */
     protected array|string $lastLinkClass = '';
     protected bool $overrideLastLinkClass = true;
 
@@ -19,6 +22,8 @@ trait HasLastLinkClass
      * @param bool $override Whether to override the current last link class or not.
      *
      * @return static A new instance of the current class with the specified last link class.
+     *
+     * @psalm-param string|string[] $value The `CSS` class for the last link tag.
      */
     public function lastLinkClass(array|string $value, bool $override = true): static
     {

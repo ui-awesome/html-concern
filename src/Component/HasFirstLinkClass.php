@@ -9,6 +9,9 @@ namespace UIAwesome\Html\Concern\Component;
  */
 trait HasFirstLinkClass
 {
+    /**
+     * @psalm-var string|string[]
+     */
     protected array|string $firstLinkClass = '';
     protected bool $overrideFirstLinkClass = true;
 
@@ -19,6 +22,8 @@ trait HasFirstLinkClass
      * @param bool $override Whether to override the current first link class or not.
      *
      * @return static A new instance of the current class with the specified first link class.
+     *
+     * @psalm-param string|string[] $value The `CSS` class for the first link tag.
      */
     public function firstLinkClass(array|string $value, bool $override = true): static
     {

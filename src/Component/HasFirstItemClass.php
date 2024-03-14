@@ -9,6 +9,9 @@ namespace UIAwesome\Html\Concern\Component;
  */
 trait HasFirstItemClass
 {
+    /**
+     * @psalm-var string|string[]
+     */
     protected array|string $firstItemClass = '';
     protected bool $overrideFirstItemClass = true;
 
@@ -19,6 +22,8 @@ trait HasFirstItemClass
      * @param bool $override Whether to override the current first item class or not.
      *
      * @return static A new instance of the current class with the specified first item class.
+     *
+     * @psalm-param string|string[] $value The `CSS` class for the first item tag.
      */
     public function firstItemClass(array|string $value, bool $override = true): static
     {
