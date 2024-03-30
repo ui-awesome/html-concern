@@ -32,13 +32,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```shell
-composer require --prefer-dist ui-awesome/html-concern:^0.1
+composer require --prefer-dist ui-awesome/html-concern:^0.2
 ```
 
 or add
 
 ```json
-"ui-awesome/html-concern": "^0.1"
+"ui-awesome/html-concern": "^0.2"
 ```
 
 to the require section of your `composer.json` file. 
@@ -63,42 +63,6 @@ List of traits avaibles to use in your classes:
 - [HasTemplate](src/HasTemplate.php)
 - [HasUncheckedCollection](src/HasUncheckedCollection.php)
   > Methods available: `uncheckedAttributes()`, `uncheckedClass()`, `uncheckedValue()`.
-
-List of components avaibles to use in your classes:
-
-- [HasActivateItems](src/Component/HasActivateItems.php)
-- [HasCurrentPath](src/Component/HasCurrentPath.php)
-- [HasFirstItemClass](src/Component/HasFirstItemClass.php)
-- [HasFirstLinkClass](src/Component/HasFirstLinkClass.php)
-- [HasIconCollection](src/Component/HasIconCollection.php)
-  > Methods available: `getIconAttributes()`, `iconAttributes()`, `iconClass()`, `iconContent()`, `iconFilePath()`, `iconTag()`.
-- [HasLastItemClass](src/Component/HasLastItemClass.php)
-- [HasLastLinkClass](src/Component/HasLastLinkClass.php)
-- [HasLinkCollection](src/Component/HasLinkCollection.php)
-  > Methods available: `getLinkAttributes()`, `linkAttributes()`, `linkClass()`.
-- [HasLinkContainerCollection](src/Component/HasLinkContainerCollection.php)
-  > Methods available: `getLinkContainerAttributes()`, `linkContainerAttributes()`, `linkContainerClass()`, `linkContainerTag()`.
-- [HasListCollection](src/Component/HasListCollection.php)
-  > Methods available: `getListAttributes()`, `listAttributes()`, `listClass()`, `listType()`.
-- [HasListContainerCollection](src/Component/HasListContainerCollection.php)
-  > Methods available: `getListContainerAttributes()`, `listContainerAttributes()`, `listContainerClass()`, `listContainerTag()`.
-- [HasLastItemActiveClass](src/Component/HasLastItemActiveClass.php)
-- [HasLinkActiveClass](src/Component/HasActiveClass.php)  
-- [HaslinkActiveTag](src/Component/HasLinkActiveTag.php)
-- [HasLinkAreaCurrent](src/Component/HasLinkAreaCurrent.php)
-- [HasLinkDisabledClass](src/Component/HasDisabledClass.php) 
-- [HasLinkItemActiveClass](src/Component/HasItemActiveClass.php)
-- [HasLinkItemDisabledClass](src/Component/HasItemDisabledClass.php) 
-- [HasListItemAreaCurrent](src/Component/HasListItemAreaCurrent.php)
-- [HasListItemCollection](src/Component/HasListItemCollection.php)
-  > Methods available: `getListItemAttributes()`, `listItemAttributes()`, `listItemClass()`, `listItemTag()`.
-- [HasListItemContainerCollection](src/Component/HasListItemContainerCollection.php)
-  > Methods available: `getListItemContainerAttributes()`, `listItemContainerAttributes()`, `listItemContainerClass()`, `listItemContainerTag()`.
-- [HasPrefixItems](src/Component/HasPrefixItems.php)
-- [HasSuffixItems](src/Component/HasSuffixItems.php)
-- [HasTemplateItem](src/Component/HasTemplateItem.php)
-- [HasTemplateLinkItem](src/Component/HasTemplateLinkItem.php)
-- [HasToggle](src/Component/HasToggle.php)
 
 ## Testing
 

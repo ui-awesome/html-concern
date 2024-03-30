@@ -1,6 +1,8 @@
 # Change Log
 
-## 0.1.3 Under development
+## 0.2.0 March 30, 2024
+
+- Enh #26: Update `ui-awesome/html-helper` to `0.2` and move `Components` to `ui-awesome/html-core-component` (@terabytesoftw)
 
 ## 0.1.2 March 14, 2024
 
